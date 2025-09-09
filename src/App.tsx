@@ -1,4 +1,5 @@
 import "@a1rth/css-normalize";
+import "./styles/main.scss"
 
 function App() {
 

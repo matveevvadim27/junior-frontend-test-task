@@ -1,4 +1,9 @@
 @use 'helpers/index' as *;
+@use './variables' as *;
+
+p {
+  font-family: $font-main;
+}
 
 a,
 button,
