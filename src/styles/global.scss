@@ -1,7 +1,7 @@
 @use 'helpers/index' as *;
 @use './variables' as *;
 
-p {
+body {
   font-family: $font-main;
 }
 

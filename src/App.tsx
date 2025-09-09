@@ -1,12 +1,5 @@
-import "@a1rth/css-normalize";
-import "./styles/main.scss"
-
 function App() {
-
-  return (
-    <>
-    </>
-  )
+  return <section className="container"></section>
 }
 
 export default App
