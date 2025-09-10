@@ -1,0 +1,39 @@
+@use '../../../styles/helpers' as *;
+@use '../../../styles/variables' as *;
+
+.card {
+  width: 328px;
+  height: 248px;
+  padding: 35px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 13px 19px 0 rgba(0, 0, 0, 0.07);
+
+  &__wrapper {
+    width: 72px;
+    min-height: 72px;
+    max-height: 72px;
+    border-radius: 50%;
+    background-color: $danger-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__hr {
+    width: 50px;
+    height: 2px;
+    background-color: $danger-color;
+    border: none;
+    border-top: 2px solid red;
+    margin: 0;
+  }
+
+  &__text {
+    color: $second-text-color;
+    font-size: 14px;
+    line-height: 146%;
+    letter-spacing: 0.2px;
+  }
+}

@@ -1,0 +1,15 @@
+@use '../../../styles/helpers' as *;
+@use '../../../styles/variables' as *;
+
+.services {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    @include tablet-s {
+      flex-direction: column;
+    }
+  }
+}
