@@ -34,6 +34,7 @@
     padding: 8px 60px;
     outline: 2px solid $primary-color;
     border: none;
+    line-height: normal;
 
     @include mobile {
       padding: 6px 20px;

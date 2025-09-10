@@ -1,0 +1,31 @@
+@use '../../../styles/helpers' as *;
+@use '../../../styles/variables' as *;
+
+.header {
+  height: 80px;
+  border-bottom: 2px solid $black-color;
+
+  &__container {
+    max-width: 1440px;
+    height: 100%;
+    padding-inline: 70px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mobile {
+      padding-inline: 10px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 49px;
+
+    @include mobile {
+      gap: 0;
+    }
+  }
+}
