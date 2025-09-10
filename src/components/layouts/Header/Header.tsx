@@ -17,7 +17,9 @@ const Header = (props: HeaderPropsType) => {
   return (
     <header className={styles.header}>
       <div className={styles.header__container}>
-        <Logo />
+        <Button className={styles.header__button} href={"/"}>
+          <Logo />
+        </Button>
         <div className={styles.header__buttons}>
           <Button href={"/contacts"} variant={"link"}>
             Контакты
