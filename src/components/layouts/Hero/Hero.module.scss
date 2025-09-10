@@ -1,0 +1,16 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding-block: 16.5px;
+  gap: 35px;
+
+  &__title {
+    max-width: 727px;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+}

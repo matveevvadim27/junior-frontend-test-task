@@ -6,11 +6,27 @@ body {
   color: $text-color;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin-top: 80px;
+
+  @include mobile {
+    gap: 11px;
+    margin-top: 37px;
+  }
+}
+
 h1, .h1 {
-  font-size: clamp(28px, 2vw, 58px);
+  font-size: 58px;
   font-weight: bold;
   letter-spacing: 0.2px;
-  line-height: 72.5%;
+  line-height: 138%;
+
+  @include mobile {
+    font-size: 28px;
+  }
 }
 
 a,
