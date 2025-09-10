@@ -1,0 +1,26 @@
+@use '../../../styles/helpers' as *;
+@use '../../../styles/variables' as *;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__input {
+    padding: 10px;
+    outline: 1px solid $black-color;
+    border: none;
+    border-radius: 2px;
+
+    &:focus {
+      outline: 1px solid $danger-color;
+      border: none;
+    }
+  }
+}

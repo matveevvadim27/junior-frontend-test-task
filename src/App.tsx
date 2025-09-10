@@ -5,13 +5,14 @@ import ContactsPage from "./pages/Contacts"
 import Header from "./components/layouts/Header"
 import { useState } from "react"
 import ModalWindow from "./components/shared/ModalWindow"
+import AuthForm from "./components/shared/AuthForm"
 
 function App() {
   const [isOpen, setIsOpen] = useState<boolean>(false)
   return (
     <>
       <ModalWindow isOpen={isOpen} onClose={() => setIsOpen(false)}>
-        12312
+        <AuthForm />
       </ModalWindow>
       <Header onOpen={() => setIsOpen(true)} />
       <Routes>
