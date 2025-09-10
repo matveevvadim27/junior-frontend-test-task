@@ -1,0 +1,18 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-block: 16.5px;
+  gap: 35px;
+  height: 280px;
+
+  &__title {
+    max-width: 727px;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+}

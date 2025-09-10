@@ -1,16 +1,13 @@
-import Header from "./components/layouts/Header"
-import Hero from "./components/layouts/Hero"
-import Services from "./components/layouts/Services"
+import { Routes, Route } from "react-router-dom"
+import MainPage from "./pages/Main"
+import HomePage from "./pages/Home"
 
 function App() {
   return (
-    <>
-      <Header />
-      <main>
-        <Hero />
-        <Services />
-      </main>
-    </>
+    <Routes>
+      <Route path="/" element={<MainPage />} />
+      <Route path="/home" element={<HomePage />} />
+    </Routes>
   )
 }
 
