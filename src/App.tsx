@@ -6,18 +6,26 @@ import Header from "./components/layouts/Header"
 import { useState } from "react"
 import ModalWindow from "./components/shared/ModalWindow"
 import AuthForm from "./components/shared/AuthForm"
+import ProtectedRoute from "./routes/ProtectedRoute"
 
 function App() {
   const [isOpen, setIsOpen] = useState<boolean>(false)
   return (
     <>
       <ModalWindow isOpen={isOpen} onClose={() => setIsOpen(false)}>
-        <AuthForm />
+        <AuthForm onClose={() => setIsOpen(false)} />
       </ModalWindow>
       <Header onOpen={() => setIsOpen(true)} />
       <Routes>
         <Route path="/" element={<MainPage />} />
-        <Route path="/home" element={<HomePage />} />
+        <Route
+          path="/home"
+          element={
+            <ProtectedRoute>
+              <HomePage />
+            </ProtectedRoute>
+          }
+        />
         <Route path="/contacts" element={<ContactsPage />} />
       </Routes>
     </>
