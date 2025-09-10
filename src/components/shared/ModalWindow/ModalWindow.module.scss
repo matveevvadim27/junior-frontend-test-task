@@ -1,0 +1,43 @@
+@use '../../../styles/helpers' as *;
+@use '../../../styles/variables' as *;
+
+.modal {
+  z-index: 100;
+  position: fixed;
+  inset: 0;
+  background: $modal-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    background-color: $light-text-color;
+    gap: 20px;
+    padding: 40px;
+    border-radius: 8px;
+
+    @include mobile {
+      max-width: 343px;
+      padding-block: 24px;
+      padding-inline: 12px;
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $danger-color;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    border: none;
+    color: $danger-color;
+    padding: 20px;
+    margin-right: -20px;
+  }
+}
