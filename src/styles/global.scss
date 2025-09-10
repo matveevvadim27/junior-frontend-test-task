@@ -3,6 +3,14 @@
 
 body {
   font-family: $font-main;
+  color: $text-color;
+}
+
+h1, .h1 {
+  font-size: clamp(28px, 2vw, 58px);
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  line-height: 72.5%;
 }
 
 a,
