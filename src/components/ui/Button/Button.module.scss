@@ -1,3 +1,52 @@
-.button {
+@use '../../../styles/helpers' as *;
+@use '../../../styles/variables' as *;
 
+.button {
+  font-family: $font-main;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 157%;
+  letter-spacing: 0.2px;
+  border-radius: 5px;
+  padding: 15px 40px;
+
+  &:hover {
+    transform: scale(0.95);
+    transition-duration: 0.2s;
+  }
+
+  &.primary {
+    background-color: $primary-color;
+    color: $light-text-color;
+    border: none;
+  }
+
+  &.secondary {
+    background-color: $light-text-color;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+  }
+
+  &.auth {
+    color: $primary-color;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 8px 60px;
+    outline: 2px solid $primary-color;
+    border: none;
+
+    @include mobile {
+      padding: 6px 20px;
+    }
+  }
+
+  &.link {
+    line-height: 160%;
+    font-family: $font-secondary;
+    font-weight: 600;
+    font-size: 15px;
+    color: $second-text-color;
+    padding: 10px;
+    border: none;
+  }
 }

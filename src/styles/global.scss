@@ -12,7 +12,7 @@ input,
 textarea,
 select,
 svg * {
-  transition-duration: var(--transition-duration);
+  transition-duration: $transition-duration;
 }
 
 button {
